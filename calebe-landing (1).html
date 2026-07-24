@@ -276,6 +276,38 @@
   .card h3{ font-size:19px; margin-bottom:10px; }
   .card p{ color:var(--muted); font-size:15px; }
 
+  /* ---------- PORTFÓLIO ---------- */
+  .proj-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+  @media(max-width:860px){ .proj-grid{ grid-template-columns:1fr; } }
+  .proj-card{
+    display:block;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .proj-card:hover{ transform:translateY(-4px); box-shadow:0 20px 40px -20px rgba(11,17,32,0.25); }
+  .proj-wide{ grid-column:1 / -1; }
+  .proj-chrome{ display:flex; gap:6px; padding:10px 12px; }
+  .proj-dot{ width:8px; height:8px; border-radius:50%; display:block; }
+  .proj-cover{
+    height:150px;
+    display:flex; align-items:flex-end;
+    padding:18px;
+  }
+  .proj-cover-name{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700; font-size:22px; color:#fff;
+  }
+  .proj-body{ padding:20px; }
+  .proj-tag{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px; color:var(--muted);
+    display:block; margin-bottom:8px;
+  }
+  .proj-body p{ font-size:14.5px; color:var(--ink); }
+
   /* ---------- SKILLS ---------- */
   .skills-band{ background:var(--ink); color:var(--paper); }
   .skills-band .section-head p{ color:rgba(247,245,241,0.62); }
@@ -411,6 +443,7 @@
     <div class="nav-links">
       <a href="#sobre">Sobre</a>
       <a href="#o-que-faco">O que faço</a>
+      <a href="#portfolio">Portfólio</a>
       <a href="#skills">Skills</a>
       <a href="#planos">Planos</a>
       <a href="#faq">Dúvidas</a>
@@ -489,6 +522,84 @@
         <h3>Suporte direto, sem burocracia</h3>
         <p>Atendimento próximo, linguagem clara e prazos definidos, do primeiro contato até o site publicado.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Portfólio</span>
+      <h2>Projetos conceituais — o padrão de qualidade que eu entrego.</h2>
+      <p>Sites desenvolvidos como demonstração de capacidade técnica e visual, no mesmo nível do que eu entrego pra clientes reais.</p>
+    </div>
+    <div class="proj-grid">
+
+      <a href="#" class="proj-card reveal-item">
+        <div class="proj-chrome" style="background:#F5EDE6;">
+          <i class="proj-dot" style="background:#D9A5A0;"></i><i class="proj-dot" style="background:#C6A15B;"></i><i class="proj-dot" style="background:rgba(62,46,42,.4);"></i>
+        </div>
+        <div class="proj-cover" style="background:linear-gradient(135deg,#D9A5A0,#C6A15B);">
+          <span class="proj-cover-name" style="font-style:italic;">Studio Bella Hair</span>
+        </div>
+        <div class="proj-body">
+          <span class="proj-tag">salão de beleza</span>
+          <p>Landing page com galeria e agendamento direto pelo WhatsApp.</p>
+        </div>
+      </a>
+
+      <a href="#" class="proj-card reveal-item">
+        <div class="proj-chrome" style="background:#F2F4F6;">
+          <i class="proj-dot" style="background:#2E6F9E;"></i><i class="proj-dot" style="background:#4CAF8C;"></i><i class="proj-dot" style="background:rgba(30,78,112,.4);"></i>
+        </div>
+        <div class="proj-cover" style="background:linear-gradient(135deg,#2E6F9E,#1E4E70);">
+          <span class="proj-cover-name">Sorriso Vitale</span>
+        </div>
+        <div class="proj-body">
+          <span class="proj-tag">clínica odontológica</span>
+          <p>Site institucional com FAQ e formulário de agendamento estruturado.</p>
+        </div>
+      </a>
+
+      <a href="#" class="proj-card reveal-item">
+        <div class="proj-chrome" style="background:#1A1A1A;">
+          <i class="proj-dot" style="background:#D9622B;"></i><i class="proj-dot" style="background:#E8B339;"></i><i class="proj-dot" style="background:rgba(255,255,255,.2);"></i>
+        </div>
+        <div class="proj-cover" style="background:linear-gradient(135deg,#1A1A1A,#D9622B);">
+          <span class="proj-cover-name" style="color:#E8B339;">Brasa & Cia</span>
+        </div>
+        <div class="proj-body">
+          <span class="proj-tag">hamburgueria</span>
+          <p>Cardápio interativo com pedido direto pelo WhatsApp.</p>
+        </div>
+      </a>
+
+      <a href="#" class="proj-card reveal-item">
+        <div class="proj-chrome" style="background:#0F1318;">
+          <i class="proj-dot" style="background:#1E88E5;"></i><i class="proj-dot" style="background:#3DBE6C;"></i><i class="proj-dot" style="background:rgba(255,255,255,.2);"></i>
+        </div>
+        <div class="proj-cover" style="background:linear-gradient(135deg,#0F1318,#1E88E5);">
+          <span class="proj-cover-name">TechFix</span>
+        </div>
+        <div class="proj-body">
+          <span class="proj-tag">assistência técnica</span>
+          <p>Fluxo "como funciona" que reduz dúvida antes do orçamento.</p>
+        </div>
+      </a>
+
+      <a href="#" class="proj-card reveal-item proj-wide">
+        <div class="proj-chrome" style="background:#1B2A4A;">
+          <i class="proj-dot" style="background:#B08D57;"></i><i class="proj-dot" style="background:rgba(255,255,255,.4);"></i><i class="proj-dot" style="background:rgba(255,255,255,.2);"></i>
+        </div>
+        <div class="proj-cover" style="background:linear-gradient(135deg,#1B2A4A,#B08D57);">
+          <span class="proj-cover-name">Moraes & Castro Advocacia</span>
+        </div>
+        <div class="proj-body">
+          <span class="proj-tag">escritório de advocacia</span>
+          <p>Site sóbrio e formal com formulário de triagem de caso.</p>
+        </div>
+      </a>
+
     </div>
   </div>
 </section>
@@ -618,8 +729,7 @@
 </footer>
 
 <a href="https://wa.me/5588981654646?text=Tudo%20bem%2C%20Calebe%3F%20Quero%20um%20site%21" target="_blank" rel="noopener" class="float-wpp" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.64-.6-2.9-1.25-4.79-4.17-4.94-4.36-.１４-.１９-１．１８-１．５７-１．１８-３ ０-１．４２．７５-２．１２ １．０２-２．４１．２７-.２８．５８-.３６．７８-.３６．１９ ０．３９ ０．５６.０１．１８．０１．４２-.０７．６５.５．２４.５８．８１ ２．８８ ２．１５．０７.１５．１２.３２．０２.５１-.０９.₁₉-.₁₄.
-
+  <svg viewBox="0 0 24 24" fill="white"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.2 8.2 0 01-1.26-4.35c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 012.41 5.83c0 4.54-3.7 8.18-8.25 8.18zm4.52-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.56.12-.17.25-.64.8-.79.96-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
 </a>
 
 <script>
@@ -652,7 +762,7 @@
     });
   }, {threshold:0.2});
 
-  document.querySelectorAll('.card, .plan-row, .mock').forEach(el=>{
+  document.querySelectorAll('.card, .plan-row, .mock, .proj-card').forEach(el=>{
     el.classList.add('reveal-item');
     io.observe(el);
   });
