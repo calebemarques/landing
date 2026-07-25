@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "landing",
+			"path": "."
+		},
+		{
+			"name": "brasa-cia-hamburgueria",
+			"path": "../../Downloads/files/brasa-cia-hamburgueria"
+		},
+		{
+			"name": "moraes-castro-advocacia",
+			"path": "../../Downloads/files/moraes-castro-advocacia"
+		},
+		{
+			"name": "sorriso-vitale",
+			"path": "../../Downloads/files/sorriso-vitale"
+		},
+		{
+			"name": "studio-bella-hair",
+			"path": "../../Downloads/files/studio-bella-hair"
+		},
+		{
+			"name": "techfix",
+			"path": "../../Downloads/files/techfix"
+		}
+	],
+	"settings": {}
+}
