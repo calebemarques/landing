@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moraes & Castro Advocacia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          marinho: '#1B2A4A',
+          dourado: '#B08D57',
+          grafite: '#4A4A4A',
+          off: '#FAFAF8'
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          body: ['Lato', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Lato', sans-serif; background: #FAFAF8; color: #2A2A2A; }
+  .font-display { font-family: 'Playfair Display', serif; }
+  .gold-rule { width: 60px; height: 2px; background: #B08D57; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-off/95 backdrop-blur-sm border-b border-marinho/10">
+  <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+    <span class="font-display text-xl text-marinho tracking-wide">Moraes <span class="text-dourado">&</span> Castro</span>
+    <nav class="hidden md:flex gap-8 text-sm text-grafite tracking-wide">
+      <a href="#sobre" class="hover:text-dourado transition">Sobre</a>
+      <a href="#areas" class="hover:text-dourado transition">Áreas de Atuação</a>
+      <a href="#depoimentos" class="hover:text-dourado transition">Depoimentos</a>
+      <a href="#contato" class="hover:text-dourado transition">Contato</a>
+    </nav>
+    <a href="#contato" class="border border-marinho text-marinho text-sm px-5 py-2.5 hover:bg-marinho hover:text-off transition">Agende uma Consulta</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="px-6 pt-24 pb-24 bg-marinho text-off">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="gold-rule mx-auto mb-8"></div>
+    <p class="uppercase tracking-[0.3em] text-xs text-dourado font-medium mb-6">Advocacia Cível · Trabalhista · Família</p>
+    <h1 class="font-display text-4xl md:text-6xl leading-tight mb-6">Segurança Jurídica para<br>Você e sua Família</h1>
+    <p class="text-off/60 text-lg max-w-xl mx-auto mb-10">Atendimento personalizado, ético e dedicado — cada caso tratado com a atenção que merece.</p>
+    <a href="#contato" class="inline-block border border-dourado text-dourado px-8 py-3.5 tracking-wide hover:bg-dourado hover:text-marinho transition">Agende uma Consulta</a>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="px-6 py-20 max-w-3xl mx-auto text-center">
+  <div class="gold-rule mx-auto mb-8"></div>
+  <p class="font-display text-2xl md:text-3xl text-marinho leading-relaxed">
+    O escritório Moraes & Castro atua há anos defendendo os direitos de nossos clientes com ética, dedicação e resultados concretos. Cada caso é tratado com atenção individual.
+  </p>
+</section>
+
+<!-- ÁREAS DE ATUAÇÃO -->
+<section id="areas" class="px-6 py-20 bg-white border-y border-marinho/10">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="uppercase tracking-[0.3em] text-xs text-dourado font-medium mb-3">Como podemos ajudar</p>
+      <h2 class="font-display text-3xl md:text-4xl text-marinho">Áreas de Atuação</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+      <div class="border-l-2 border-dourado pl-6">
+        <h3 class="font-display text-xl text-marinho mb-2">Direito Cível</h3>
+        <p class="text-grafite/70 text-sm leading-relaxed">Contratos, indenizações, disputas patrimoniais e questões cíveis em geral. Procure-nos diante de qualquer conflito de natureza civil.</p>
+      </div>
+      <div class="border-l-2 border-dourado pl-6">
+        <h3 class="font-display text-xl text-marinho mb-2">Direito Trabalhista</h3>
+        <p class="text-grafite/70 text-sm leading-relaxed">Rescisões, verbas trabalhistas e defesa de direitos do trabalhador ou empregador. Atuação em todas as fases do processo.</p>
+      </div>
+      <div class="border-l-2 border-dourado pl-6">
+        <h3 class="font-display text-xl text-marinho mb-2">Direito de Família</h3>
+        <p class="text-grafite/70 text-sm leading-relaxed">Divórcio, pensão alimentícia, guarda e inventários, sempre com abordagem humanizada e discreta.</p>
+      </div>
+      <div class="border-l-2 border-dourado pl-6">
+        <h3 class="font-display text-xl text-marinho mb-2">Direito do Consumidor</h3>
+        <p class="text-grafite/70 text-sm leading-relaxed">Defesa contra práticas abusivas, cobranças indevidas e problemas com produtos ou serviços.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="px-6 py-20">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="uppercase tracking-[0.3em] text-xs text-dourado font-medium mb-3">Confiança de nossos clientes</p>
+      <h2 class="font-display text-3xl md:text-4xl text-marinho">Depoimentos</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+        <p class="font-display text-4xl text-dourado mb-4">"</p>
+        <p class="text-grafite/70 text-sm mb-5 leading-relaxed">Resolveram meu caso trabalhista com muita competência e transparência do início ao fim.</p>
+        <p class="font-display text-marinho text-sm">Eduardo N.</p>
+      </div>
+      <div class="text-center">
+        <p class="font-display text-4xl text-dourado mb-4">"</p>
+        <p class="text-grafite/70 text-sm mb-5 leading-relaxed">Atendimento sério e humano em um momento difícil da minha vida. Muito grata pelo cuidado.</p>
+        <p class="font-display text-marinho text-sm">Beatriz O.</p>
+      </div>
+      <div class="text-center">
+        <p class="font-display text-4xl text-dourado mb-4">"</p>
+        <p class="text-grafite/70 text-sm mb-5 leading-relaxed">Profissionalismo do início ao fim, sempre me mantendo informado sobre cada etapa do processo.</p>
+        <p class="font-display text-marinho text-sm">Ricardo F.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="px-6 py-20 bg-marinho text-off">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+    <div>
+      <p class="uppercase tracking-[0.3em] text-xs text-dourado font-medium mb-3">Fale conosco</p>
+      <h2 class="font-display text-3xl mb-6">Descreva seu Caso</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nome completo" class="w-full bg-white/5 border border-off/20 px-4 py-3 text-sm text-off placeholder:text-off/40 focus:outline-none focus:border-dourado">
+        <input type="tel" placeholder="Telefone / WhatsApp" class="w-full bg-white/5 border border-off/20 px-4 py-3 text-sm text-off placeholder:text-off/40 focus:outline-none focus:border-dourado">
+        <textarea placeholder="Descreva brevemente seu caso" rows="3" class="w-full bg-white/5 border border-off/20 px-4 py-3 text-sm text-off placeholder:text-off/40 focus:outline-none focus:border-dourado"></textarea>
+        <button type="button" onclick="window.open('https://wa.me/5500000000000?text=Ol%C3%A1!%20Preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica.','_blank')" class="w-full border border-dourado text-dourado py-3.5 tracking-wide hover:bg-dourado hover:text-marinho transition">Enviar e Solicitar Contato</button>
+      </form>
+    </div>
+    <div>
+      <div class="rounded-none overflow-hidden border border-off/20 h-56 mb-6">
+        <iframe src="https://www.google.com/maps?q=Centro&output=embed" class="w-full h-full grayscale contrast-125" loading="lazy"></iframe>
+      </div>
+      <ul class="space-y-2 text-off/60 text-sm">
+        <li>📍 Av. Brasil, 1024 — Sala 302, Centro</li>
+        <li>🕐 Seg a Sex, 9h às 18h — Atendimento com hora marcada</li>
+        <li>📱 (00) 00000-0000</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="px-6 py-8 bg-marinho border-t border-off/10 text-center text-off/30 text-xs">
+  © 2026 Moraes & Castro Advocacia — Todos os direitos reservados
+</footer>
+
+</body>
+</html>

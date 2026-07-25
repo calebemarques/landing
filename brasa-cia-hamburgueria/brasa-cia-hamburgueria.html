@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brasa & Cia — Hamburgueria Artesanal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          preto: '#1A1A1A',
+          laranja: '#D9622B',
+          mostarda: '#E8B339',
+          creme: '#FAFAFA'
+        },
+        fontFamily: {
+          display: ['Anton', 'sans-serif'],
+          body: ['Poppins', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Poppins', sans-serif; background: #1A1A1A; color: #FAFAFA; }
+  .font-display { font-family: 'Anton', sans-serif; letter-spacing: 0.02em; }
+  .ticket { clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 96% 100%, 92% 92%, 88% 100%, 84% 92%, 80% 100%, 76% 92%, 72% 100%, 68% 92%, 64% 100%, 60% 92%, 56% 100%, 52% 92%, 48% 100%, 44% 92%, 40% 100%, 36% 92%, 32% 100%, 28% 92%, 24% 100%, 20% 92%, 16% 100%, 12% 92%, 8% 100%, 4% 92%, 0% 100%); }
+  .menu-item { border-bottom: 1px dashed rgba(250,250,250,0.15); }
+  .filter-btn.active { background: #D9622B; color: #1A1A1A; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- NAV -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-preto/90 backdrop-blur-sm border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <span class="font-display text-2xl text-mostarda">BRASA<span class="text-laranja">&</span>CIA</span>
+    <nav class="hidden md:flex gap-8 text-sm text-white/70">
+      <a href="#sobre" class="hover:text-laranja transition">Sobre</a>
+      <a href="#cardapio" class="hover:text-laranja transition">Cardápio</a>
+      <a href="#depoimentos" class="hover:text-laranja transition">Depoimentos</a>
+      <a href="#contato" class="hover:text-laranja transition">Contato</a>
+    </nav>
+    <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank" class="bg-laranja text-preto text-sm font-bold px-5 py-2.5 rounded-full hover:bg-mostarda transition">Peça Agora</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative pt-40 pb-24 px-6 overflow-hidden">
+  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-laranja/10 rounded-full blur-3xl"></div>
+  <div class="max-w-5xl mx-auto text-center relative">
+    <p class="uppercase tracking-[0.3em] text-xs text-mostarda font-bold mb-6">Artesanal · Na Chapa · Todo Dia</p>
+    <h1 class="font-display text-6xl md:text-8xl leading-none text-creme mb-6">HAMBÚRGUER<br><span class="text-laranja">ARTESANAL</span></h1>
+    <p class="text-white/60 text-lg max-w-xl mx-auto mb-10">Ingredientes selecionados, receita própria e sabor de verdade. Sem atalho, sem pressa.</p>
+    <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank"
+       class="inline-flex items-center gap-2 bg-laranja text-preto px-8 py-4 rounded-full font-bold hover:bg-mostarda transition">
+      Peça pelo WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="px-6 py-16 border-y border-white/10">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="text-white/70 text-lg leading-relaxed">
+      A <span class="text-mostarda font-semibold">Brasa & Cia</span> nasceu da paixão por hambúrguer bem feito: pão brioche, carne no ponto certo e ingredientes frescos todos os dias.
+    </p>
+  </div>
+</section>
+
+<!-- CARDÁPIO -->
+<section id="cardapio" class="px-6 py-24">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-6">
+      <p class="uppercase tracking-[0.3em] text-xs text-mostarda font-bold mb-3">O que vai pedir hoje?</p>
+      <h2 class="font-display text-4xl md:text-5xl text-creme">CARDÁPIO</h2>
+    </div>
+    <div class="bg-laranja text-preto rounded-xl px-6 py-3 text-center font-bold mb-12 max-w-md mx-auto">
+      🔥 Promo do dia: Brasa Duplo + Batata + Refri — R$ 45
+    </div>
+
+    <div class="flex justify-center gap-3 mb-10 flex-wrap">
+      <button class="filter-btn active px-5 py-2 rounded-full text-sm font-semibold border border-white/20 transition">Lanches</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-white/20 text-white/60 transition">Bebidas</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-white/20 text-white/60 transition">Sobremesas</button>
+    </div>
+
+    <div class="space-y-6">
+      <div class="menu-item flex justify-between items-start pb-6">
+        <div>
+          <h3 class="font-display text-xl text-creme">BRASA CLÁSSICO</h3>
+          <p class="text-white/50 text-sm mt-1">Blend 180g, queijo cheddar, bacon, molho especial, pão brioche</p>
+        </div>
+        <span class="font-display text-laranja text-lg whitespace-nowrap ml-4">R$ 32</span>
+      </div>
+      <div class="menu-item flex justify-between items-start pb-6">
+        <div>
+          <h3 class="font-display text-xl text-creme">BRASA DUPLO</h3>
+          <p class="text-white/50 text-sm mt-1">Dois blends 150g, queijo prato duplo, cebola caramelizada, barbecue</p>
+        </div>
+        <span class="font-display text-laranja text-lg whitespace-nowrap ml-4">R$ 39</span>
+      </div>
+      <div class="menu-item flex justify-between items-start pb-6">
+        <div>
+          <h3 class="font-display text-xl text-creme">SMASH BACON</h3>
+          <p class="text-white/50 text-sm mt-1">Blend smash 120g, bacon crocante, queijo cheddar, picles</p>
+        </div>
+        <span class="font-display text-laranja text-lg whitespace-nowrap ml-4">R$ 28</span>
+      </div>
+      <div class="menu-item flex justify-between items-start pb-6">
+        <div>
+          <h3 class="font-display text-xl text-creme">VEGGIE BRASA</h3>
+          <p class="text-white/50 text-sm mt-1">Hambúrguer de grão-de-bico, queijo, rúcula, tomate seco</p>
+        </div>
+        <span class="font-display text-laranja text-lg whitespace-nowrap ml-4">R$ 30</span>
+      </div>
+      <div class="menu-item flex justify-between items-start pb-6">
+        <div>
+          <h3 class="font-display text-xl text-creme">BATATA RÚSTICA</h3>
+          <p class="text-white/50 text-sm mt-1">Porção generosa com alecrim e páprica defumada</p>
+        </div>
+        <span class="font-display text-laranja text-lg whitespace-nowrap ml-4">R$ 18</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="px-6 py-24 bg-black/30">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="uppercase tracking-[0.3em] text-xs text-mostarda font-bold mb-3">Quem já provou</p>
+      <h2 class="font-display text-4xl text-creme">DEPOIMENTOS</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+        <div class="text-mostarda mb-4">★★★★★</div>
+        <p class="text-white/70 text-sm mb-5">"Melhor hambúrguer da região, sem dúvida. Carne suculenta e pão fresquinho."</p>
+        <p class="font-display text-mostarda">— DIEGO M.</p>
+      </div>
+      <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+        <div class="text-mostarda mb-4">★★★★★</div>
+        <p class="text-white/70 text-sm mb-5">"Peço toda semana, o Smash Bacon é surreal. Entrega rápida também."</p>
+        <p class="font-display text-mostarda">— LARISSA F.</p>
+      </div>
+      <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+        <div class="text-mostarda mb-4">★★★★★</div>
+        <p class="text-white/70 text-sm mb-5">"Atendimento rápido pelo WhatsApp e o lanche chega quentinho. Recomendo."</p>
+        <p class="font-display text-mostarda">— THIAGO C.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO / DELIVERY -->
+<section id="contato" class="px-6 py-24">
+  <div class="ticket max-w-3xl mx-auto bg-laranja text-preto rounded-t-xl px-8 pt-10 pb-16 text-center">
+    <p class="font-display text-3xl md:text-4xl mb-4">BATEU A FOME?</p>
+    <p class="text-preto/70 mb-8">Peça agora e receba quentinho em casa.</p>
+    <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank"
+       class="inline-flex items-center gap-2 bg-preto text-creme px-8 py-4 rounded-full font-bold hover:bg-black transition">
+      Pedir pelo WhatsApp
+    </a>
+  </div>
+  <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-6 mt-10 text-center text-white/60 text-sm">
+    <p>📍 Rua do Comércio, 512 — Centro</p>
+    <p>🕐 Ter a Dom, 18h às 23h</p>
+  </div>
+</section>
+
+<footer class="px-6 py-8 border-t border-white/10 text-center text-white/30 text-xs">
+  © 2026 Brasa & Cia Hamburgueria — Todos os direitos reservados
+</footer>
+
+<a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank"
+   class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl shadow-black/40">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.2 8.2 0 01-1.26-4.35c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 012.41 5.83c0 4.54-3.7 8.18-8.25 8.18zm4.52-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.56.12-.17.25-.64.8-.79.96-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+</a>
+
+<script>
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => { b.classList.remove('active'); b.classList.add('text-white/60'); });
+      btn.classList.add('active'); btn.classList.remove('text-white/60');
+    });
+  });
+</script>
+
+</body>
+</html>
