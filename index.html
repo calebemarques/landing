@@ -298,6 +298,54 @@
   }
   .proj-body p{ font-size:14.5px; color:var(--ink); }
 
+
+.github-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 22px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:15px;
+  color:#fff;
+  background:linear-gradient(135deg, #111827, #0b1120);
+  border:1px solid rgba(255,255,255,.10);
+  box-shadow:0 14px 30px rgba(11,17,32,.22);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.github-btn::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,.08) 45%, transparent 100%);
+  transform:translateX(-120%);
+  transition:transform .6s ease;
+}
+
+.github-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 18px 40px rgba(11,17,32,.28);
+  border-color:rgba(255,255,255,.18);
+  background:linear-gradient(135deg, #0f172a, #111827);
+}
+
+.github-btn:hover::before{
+  transform:translateX(120%);
+}
+
+.github-icon{
+  width:20px;
+  height:20px;
+  flex-shrink:0;
+}
+
+
+
+
   /* ---------- SKILLS ---------- */
   .skills-band{ background:var(--ink); color:var(--paper); }
   .skills-band .section-head p{ color:rgba(247,245,241,0.62); }
